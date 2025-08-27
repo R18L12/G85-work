@@ -1,0 +1,105 @@
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif; 
+    color: #e0e0ff;
+}
+
+body {
+    background: #000 !important;  
+}
+
+
+body::before {
+    content: none !important;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+
+.navbar-brand {
+    color: #0ff !important; 
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 0 0 5px #0ff,
+                 0 0 10px #0ff,
+                 0 0 20px #0ff,
+                 0 0 40px #ff00ff;
+    animation: brandGlow 3s infinite alternate;
+}
+
+@keyframes brandGlow {
+    from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    to {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #0ff;
+    }
+}
+
+
+.btn {
+    border: none;
+    color: #fff !important;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    transform: scale(1.05);
+}
+
+
+input, textarea, select {
+    background: #000000 !important; 
+    color: #ffffff !important; 
+    border: 2px solid #40fff5 !important;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 8px #5283eb;
+    transition: 0.3s;
+    caret-color: #0ff; 
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    border-color: #00ffff !important;
+    background: #000 !important; 
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+    color: #ffffff !important;
+}
+
+
+.card, .container {
+    background: #000000 !important; 
+    border: 1px solid #9d4edd;
+    box-shadow: 0 0 20px #9d4edd44;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+h1, h2, h3 {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+.neon-flicker {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 
+                 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0.3; }
+}
